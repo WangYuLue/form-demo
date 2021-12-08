@@ -45,7 +45,7 @@ const GenForm = (props: IProps) => {
         >
           {
             data.type === 'textarea' ?
-              <TextArea rows={6} style={{ width: '300px' }} id={data.id} /> :
+              <TextArea rows={15} style={{ width: '800px' }} id={data.id} /> :
               <Input style={{ width: '200px' }} id={data.id} />
           }
         </Form.Item>
