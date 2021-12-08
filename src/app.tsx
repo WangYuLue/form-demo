@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Form, Input } from 'antd';
+import { Tabs, Form, Input, Button, notification, message } from 'antd';
 import data from './form.json';
 import './app.scss';
 
@@ -20,10 +20,17 @@ interface IProps {
 
 const GenForm = (props: IProps) => {
   const { title, formData } = props.data;
+  const onFinish = (values: any) => {
+    message.success('提交成功');
+    // notification.open({
+    //   message: '表单提交成功',
+    // });
+  };
   return <Form
     name={title}
     labelCol={{ span: 2 }}
     wrapperCol={{ span: 8 }}
+    onFinish={onFinish}
     autoComplete="off"
   >
     {
@@ -37,6 +44,11 @@ const GenForm = (props: IProps) => {
         </Form.Item>
       ))
     }
+    <Form.Item wrapperCol={{ offset: 2, span: 8 }}>
+      <Button type="primary" htmlType="submit">
+        提交
+      </Button>
+    </Form.Item>
   </Form>
 }
 
