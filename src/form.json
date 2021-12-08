@@ -1,0 +1,69 @@
+[
+  {
+    "title": "中国银行远期结售汇牌价",
+    "formData": [
+      {
+        "label": "货币名称",
+        "id": "currencyName"
+      },
+      {
+        "label": "货币代码",
+        "id": "currencyCode"
+      },
+      {
+        "label": "交易期限",
+        "id": "transactionPeriod"
+      },
+      {
+        "label": "买入价",
+        "id": "buyingPrice"
+      },
+      {
+        "label": "卖出价",
+        "id": "sellingPrice"
+      },
+      {
+        "label": "中间价",
+        "id": "middlePrice"
+      },
+      {
+        "label": "汇率日期",
+        "id": "exchangeRateDate"
+      }
+    ]
+  },
+  {
+    "title": "RPA 表单",
+    "formData": [
+      {
+        "label": "用户名",
+        "id": "username"
+      },
+      {
+        "label": "性别",
+        "id": "gender"
+      },
+      {
+        "label": "公司",
+        "id": "company"
+      }
+    ]
+  },
+  {
+    "title": "机器人表单",
+    "formData": [
+      {
+        "label": "机器人名",
+        "id": "robotname"
+      },
+      {
+        "label": "IP 地址",
+        "id": "ip"
+      },
+      {
+        "label": "Mac 地址",
+        "id": "mac"
+      }
+    ]
+  }
+]

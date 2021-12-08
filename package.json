@@ -1,0 +1,26 @@
+{
+  "name": "form-demo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "dev": "yarn start",
+    "build": "rm -rf dist && rm -rf .parcel-cache && parcel build index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "parcel": "^2.0.1",
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "staticOutDir": "public/"
+  },
+  "dependencies": {
+    "antd": "^4.17.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
