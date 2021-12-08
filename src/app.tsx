@@ -31,7 +31,7 @@ const GenForm = (props: IProps) => {
   };
   return <Form
     name={title}
-    labelCol={{ span: 2 }}
+    labelCol={{ span: 3 }}
     wrapperCol={{ span: 8 }}
     onFinish={onFinish}
     autoComplete="off"
@@ -51,7 +51,7 @@ const GenForm = (props: IProps) => {
         </Form.Item>
       ))
     }
-    <Form.Item wrapperCol={{ offset: 2, span: 8 }}>
+    <Form.Item wrapperCol={{ offset: 3, span: 8 }}>
       <Button type="primary" htmlType="submit">
         提交
       </Button>
