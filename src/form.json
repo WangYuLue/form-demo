@@ -33,36 +33,101 @@
     ]
   },
   {
-    "title": "RPA 表单",
+    "title": "人行账管系统账户信息报送",
     "formData": [
       {
-        "label": "用户名",
-        "id": "username"
+        "label": "姓名",
+        "id": "name"
       },
       {
         "label": "性别",
         "id": "gender"
       },
       {
-        "label": "公司",
-        "id": "company"
+        "label": "民族",
+        "id": "mz"
+      },
+      {
+        "label": "公民身份号码",
+        "id": "number"
+      },
+      {
+        "label": "住址",
+        "id": "addr"
+      },
+      {
+        "label": "出生",
+        "id": "cs"
+      },
+      {
+        "label": "法定代表人",
+        "id": "yyname"
+      },
+      {
+        "label": "住所",
+        "id": "yyaddr"
+      },
+      {
+        "label": "类型",
+        "id": "yytype"
+      },
+      {
+        "label": "名称",
+        "id": "yycompany"
+      },
+      {
+        "label": "成立日期",
+        "id": "yydate"
+      },
+      {
+        "label": "统一社会信用代码",
+        "id": "yycode"
+      },
+      {
+        "label": "注册资本",
+        "id": "yyzb"
+      },
+      {
+        "label": "营业期限",
+        "id": "yyqx"
+      },
+      {
+        "label": "经营范围",
+        "id": "yyfw"
+      },
+      {
+        "label": "登记时间",
+        "id": "yytime"
       }
     ]
   },
   {
-    "title": "机器人表单",
+    "title": "征信查询",
     "formData": [
       {
-        "label": "机器人名",
-        "id": "robotname"
+        "label": "姓名",
+        "id": "name"
       },
       {
-        "label": "IP 地址",
-        "id": "ip"
+        "label": "性别",
+        "id": "gender"
       },
       {
-        "label": "Mac 地址",
-        "id": "mac"
+        "label": "民族",
+        "id": "mz"
+      },
+      {
+        "label": "公民身份号码",
+        "id": "number"
+      },
+      {
+        "label": "住址",
+        "id": "addr"
+      },
+      {
+        "label": "征信查询结果",
+        "id": "zxcx",
+        "type": "textarea"
       }
     ]
   }

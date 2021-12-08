@@ -4,18 +4,21 @@ import data from './form.json';
 import './app.scss';
 
 const { TabPane } = Tabs;
+const { TextArea } = Input;
+
+interface IBase {
+  title: string;
+  formData: IFormData[];
+}
 
 interface IFormData {
   label: string;
   id: string;
+  type?: 'input' | 'textarea'
 }
 
 interface IProps {
-  data: {
-    title: string;
-    formData: IFormData[];
-  }
-
+  data: IBase
 }
 
 const GenForm = (props: IProps) => {
@@ -40,7 +43,11 @@ const GenForm = (props: IProps) => {
           name={data.id}
           key={data.id}
         >
-          <Input style={{ width: '200px' }} id={data.id} />
+          {
+            data.type === 'textarea' ?
+              <TextArea rows={6} style={{ width: '300px' }} id={data.id} /> :
+              <Input style={{ width: '200px' }} id={data.id} />
+          }
         </Form.Item>
       ))
     }
@@ -132,11 +139,11 @@ const demoFormDatas = [
 const App = () => {
   return (
     <div id='app'>
-      <Tabs defaultActiveKey="1">
+      <Tabs defaultActiveKey="0">
         {
           data.map((demoFormData, index) => (
             <TabPane tab={demoFormData.title} key={index}>
-              <GenForm data={demoFormData} />
+              <GenForm data={demoFormData as IBase} />
             </TabPane>
           ))
         }
